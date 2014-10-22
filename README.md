@@ -1,4 +1,4 @@
-stlhrt:gvm
+stlhrt/gvm
 =========================
 
 Docker container for ubuntu Trusty Tahr with Oracle JDK8.
