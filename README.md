@@ -1,17 +1,17 @@
-stlhrt/gvm
+stlhrt:sdkman
 =========================
 
-Docker container for ubuntu Trusty Tahr with Oracle JDK8.
+Docker container for ubuntu Trusty Tahr with Oracle JDK8 using latest stlhrt/jdk8
 
-GVM installed as base for container for running Spring/Groovy/Grails/vertx/... apps.
+SDKMAN 3.0.5 (formerly GVM) installed as base for container for running Spring/Groovy/Grails/vertx/... apps.
 
-During docker build setup of environment for _service_ user doesnt work well, as 
+During docker build setup of environment for _service_ user doesn't work well, as
 ```
     source
-``` 
+```
 command isn't available.
 
-Use _gvm_wrapper.sh_ as you would use gvm itself.
+To use image to build containers with tools installable with SDKMAN use _sdk_wrapper.sh_ as you would use sdkman itself.
 ```
-   gvm_wrapper.sh install gradle
+   RUN sdk_wrapper.sh install gradle
 ```
